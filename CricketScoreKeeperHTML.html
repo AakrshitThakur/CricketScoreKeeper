@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricketScoreKeeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CricketScoreKeeperCSS.css">
+</head>
+
+<body>
+    <div class="p-5">
+        <div class="is-flex is-justify-content-center">
+            <div class="pt-2 is-flex is-flex-direction-column is-justify-content-center">
+                <div class="is-flex is-flex-direction-column is-justify-content-center SetIconStyle">
+                    <span class="icon">
+                        <svg fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 502 502" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <g>
+                                        <path d="M499.071,428.845l-28.397-28.397c-1.875-1.875-4.419-2.929-7.071-2.929c-2.652,0-5.196,1.054-7.071,2.929l-2.868,2.868
+				l-97.2-97.199v-51.232c0-2.652-1.054-5.195-2.929-7.071L115.71,9.986C109.27,3.547,100.708,0,91.6,0
+				c-9.108,0-17.67,3.547-24.11,9.986L9.986,67.49C3.546,73.931,0,82.493,0,91.601c0,9.106,3.546,17.669,9.986,24.109
+				l237.826,237.826c1.876,1.875,4.419,2.929,7.071,2.929h51.232l97.199,97.199l-2.867,2.867c-3.905,3.905-3.905,10.237,0,14.143
+				l28.397,28.397c1.875,1.875,4.419,2.929,7.071,2.929c2.652,0,5.196-1.054,7.071-2.929l56.084-56.084
+				C502.976,439.082,502.976,432.75,499.071,428.845z M306.115,336.465h-47.09L24.129,101.567C21.466,98.905,20,95.365,20,91.601
+				c0-3.766,1.466-7.306,4.129-9.968l57.504-57.504C84.295,21.466,87.835,20,91.6,20c3.765,0,7.305,1.466,9.967,4.129
+				l234.897,234.897v47.089L306.115,336.465z M324.401,346.464l22.064-22.064l93.057,93.057l-22.064,22.064L324.401,346.464z
+				 M435.916,477.857l-14.255-14.255l2.859-2.858c0.003-0.003,0.007-0.006,0.01-0.009l24.743-24.743l14.331-14.331l14.255,14.255
+				L435.916,477.857z" />
+                                        <path d="M114.29,136.354c-3.905-3.904-10.237-3.904-14.143,0c-3.905,3.905-3.905,10.237,0,14.143L264.141,314.49
+				c1.953,1.952,4.512,2.929,7.071,2.929s5.119-0.977,7.071-2.929c3.905-3.905,3.905-10.237,0-14.142L114.29,136.354z" />
+                                        <path
+                                            d="M70.274,92.338c-3.905-3.904-10.237-3.904-14.142,0c-3.905,3.905-3.905,10.237,0,14.143l17.749,17.748
+				c1.953,1.952,4.512,2.929,7.071,2.929c2.559,0,5.119-0.977,7.071-2.929c3.905-3.905,3.905-10.237,0-14.143L70.274,92.338z" />
+                                        <path d="M156.5,316c-33.911,0-61.5,27.589-61.5,61.5s27.589,61.5,61.5,61.5s61.5-27.589,61.5-61.5S190.411,316,156.5,316z
+				 M156.5,419c-22.883,0-41.5-18.617-41.5-41.5s18.617-41.5,41.5-41.5s41.5,18.617,41.5,41.5S179.383,419,156.5,419z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="is-flex is-flex-direction-column is-justify-content-center">
+                <h1 class="title is-1">CricketScoreKeeper</h1>
+            </div>
+        </div>
+    </div>
+    <div class="p-5">
+        <div class="columns">
+            <div class="column is-one-third">
+                <figure class="image">
+                    <img src="CricketScoreKeeperImgs/ab-de-villiers-in-front-of-wicket.jpg" />
+                </figure>
+            </div>
+            <div class="column">
+                <p class="is-size-6">
+                    Cricket is a bat-and-ball game played between two teams of eleven players on a circular
+                    or
+                    oval-shaped
+                    field, at the center of which is a 22-yard pitch with a wicket at each end. The game begins with a
+                    coin
+                    toss
+                    to determine which team bats first. The batting team aims to score as many runs as possible by
+                    hitting
+                    the
+                    ball bowled by the opposing team's bowler and running between the wickets or hitting the ball to the
+                    boundary. The bowling team tries to dismiss the batsmen by hitting the wickets with the ball,
+                    catching
+                    the
+                    ball after it is hit, or other methods. After the batting team completes its innings, the roles
+                    switch.
+                    The
+                    game can be played in various formats, ranging from Test matches, which last up to five days, to One
+                    Day
+                    Internationals (ODIs), and Twenty20 (T20) matches, which are completed in a single day. The team
+                    with
+                    the
+                    most runs at the end of the match wins.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="content p-5">
+        <p class="is-size-6">
+        <h3 class="title is-3 has-text-centered">How To Play</h3>
+        To begin, select the number of matches you wish to include in the series. Next, determine the number of overs to
+        be played in each match. Once these selections are made, specify the event that occurred on each ball. For
+        instance - if a dot ball occurs, choose 0 and then click the "NOT OUT" button. If a run-out occurs, select the
+        number of runs scored and then click the "OUT" button. At the end of a match, if you wish to restart or replay
+        the current match, click the "Reset Score" button. If you prefer to reset the entire series along with
+        the matches, click the "Reset Everything" button.
+        </p>
+    </div>
+    <div class="columns">
+        <div class="column is-3"></div>
+        <div class="column is-6">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image SetHeightAndWidth">
+                        <img src="CricketScoreKeeperImgs/CricketStadium.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="is-flex is-justify-content-center pb-5">
+                        <div class="pt-1">
+                            <div class="is-flex is-flex-direction-column is-justify-content-center SetIconStyle">
+                                <span class="icon">
+                                    <svg fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 502 502" xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path d="M499.071,428.845l-28.397-28.397c-1.875-1.875-4.419-2.929-7.071-2.929c-2.652,0-5.196,1.054-7.071,2.929l-2.868,2.868
+                                l-97.2-97.199v-51.232c0-2.652-1.054-5.195-2.929-7.071L115.71,9.986C109.27,3.547,100.708,0,91.6,0
+                                c-9.108,0-17.67,3.547-24.11,9.986L9.986,67.49C3.546,73.931,0,82.493,0,91.601c0,9.106,3.546,17.669,9.986,24.109
+                                l237.826,237.826c1.876,1.875,4.419,2.929,7.071,2.929h51.232l97.199,97.199l-2.867,2.867c-3.905,3.905-3.905,10.237,0,14.143
+                                l28.397,28.397c1.875,1.875,4.419,2.929,7.071,2.929c2.652,0,5.196-1.054,7.071-2.929l56.084-56.084
+                                C502.976,439.082,502.976,432.75,499.071,428.845z M306.115,336.465h-47.09L24.129,101.567C21.466,98.905,20,95.365,20,91.601
+                                c0-3.766,1.466-7.306,4.129-9.968l57.504-57.504C84.295,21.466,87.835,20,91.6,20c3.765,0,7.305,1.466,9.967,4.129
+                                l234.897,234.897v47.089L306.115,336.465z M324.401,346.464l22.064-22.064l93.057,93.057l-22.064,22.064L324.401,346.464z
+                                 M435.916,477.857l-14.255-14.255l2.859-2.858c0.003-0.003,0.007-0.006,0.01-0.009l24.743-24.743l14.331-14.331l14.255,14.255
+                                L435.916,477.857z" />
+                                                    <path
+                                                        d="M114.29,136.354c-3.905-3.904-10.237-3.904-14.143,0c-3.905,3.905-3.905,10.237,0,14.143L264.141,314.49
+                                c1.953,1.952,4.512,2.929,7.071,2.929s5.119-0.977,7.071-2.929c3.905-3.905,3.905-10.237,0-14.142L114.29,136.354z" />
+                                                    <path
+                                                        d="M70.274,92.338c-3.905-3.904-10.237-3.904-14.142,0c-3.905,3.905-3.905,10.237,0,14.143l17.749,17.748
+                                c1.953,1.952,4.512,2.929,7.071,2.929c2.559,0,5.119-0.977,7.071-2.929c3.905-3.905,3.905-10.237,0-14.143L70.274,92.338z" />
+                                                    <path
+                                                        d="M156.5,316c-33.911,0-61.5,27.589-61.5,61.5s27.589,61.5,61.5,61.5s61.5-27.589,61.5-61.5S190.411,316,156.5,316z
+                                 M156.5,419c-22.883,0-41.5-18.617-41.5-41.5s18.617-41.5,41.5-41.5s41.5,18.617,41.5,41.5S179.383,419,156.5,419z" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="is-flex is-flex-direction-column is-justify-content-center b-0">
+                            <h3 class="title is-3">CricketScoreKeeper</h3>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <section>
+                            <div>
+                                <!-- Who is playing? -->
+                                <div class="mt-3 mb-3">
+                                    <h3 class="title is-4 has-text-centered" id="WhoIsPlayingH3">No One Has Played yet
+                                    </h3>
+                                </div>
+                                <!-- About series -->
+                                <div>
+                                    <div class="is-flex is-justify-content-center is-align-items-center">
+                                        <h3 class="title is-4 mb-0" id="SeriesOfH3">Series Of&nbsp;&#8674;&nbsp;</h3>
+                                        <div>
+                                            <select class="select" id="SeriesOfSelect">
+                                                <option value="1">1</option>
+                                                <option value="3">3</option>
+                                                <option value="5">5</option>
+                                                <option value="7">7</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Count overs -->
+                                <div>
+                                    <div class="is-flex is-justify-content-center">
+                                        <h3 class="title is-4 has-text-centered">Select Overs For The
+                                            Match&nbsp;&#8674;&nbsp;</h3>
+                                        <select class="select" id="OversOfSelect">
+                                            <option value="1">1 Over</option>
+                                            <option value="2">2 Overs</option>
+                                            <option value="5">5 Overs</option>
+                                            <option value="7">7 Overs</option>
+                                            <option value="10">10 Overs</option>
+                                            <option value="20">20 Overs</option>
+                                            <option value="50">50 Overs</option>
+                                        </select>
+                                    </div>
+                                    <div class="is-flex is-justify-content-center">
+                                        <p>
+                                            Match Overs&nbsp;&#8674;&nbsp;
+                                        </p>
+                                        <h3 class="title is-4" id="MatchOvers">0</h3>
+                                    </div>
+                                    <div class="is-flex is-justify-content-start">
+                                        Overs Bowled&nbsp;&#8674;&nbsp;
+                                        <h3 class="title is-4" id="OversBowled">0.0</h3>
+                                    </div>
+                                </div>
+
+                                <!-- To keep the score -->
+                                <div class="is-flex is-justify-content-start">
+                                    <p>
+                                        Your Score Is&nbsp;&#8674;&nbsp;
+                                    <h3 class="title is-4" id="RunsScored">0-0</h3>
+                                    </p>
+                                </div>
+                                <!-- Event per ball -->
+                                <div class="is-flex is-justify-content-space-between">
+                                    <select class="select" id="EventPerBall">
+                                        <option value="-2">Wide Ball</option>
+                                        <option value="-1">No Ball</option>
+                                        <option value="0">0 Run</option>
+                                        <option value="1">1 Run</option>
+                                        <option value="2">2 Runs</option>
+                                        <option value="3">3 Runs</option>
+                                        <option value="4">4 Runs</option>
+                                        <option value="5">5 Runs</option>
+                                        <option value="6">6 Runs</option>
+                                    </select>
+                                    <div>
+                                        <button class="button is-danger" id="IsOut">OUT</button>
+                                        <button class="button is-success" id="IsNotOut">NOT OUT</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Reset -->
+                            <div class="has-text-centered mt-3">
+                                <div class="SetBottomMargin">
+                                    <button class="button is-danger" id="ResetScore">Reset Score</button>
+                                </div>
+                                <div class="SetBottomMargin">
+                                    <button class="button is-danger" id="ResetEverything">Reset Everything</button>
+                                </div>
+                            </div>
+                            <div id="AppendChildHere">
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column is-3"></div>
+    </div>
+
+    <footer class="footer theme-dark has-text-light" id="WebFooter">
+        <div class="content">
+            <div class="is-flex is-flex-direction-column is-justify-content-space-evenly">
+                <a href="https://bulma.io">
+                    <img src="https://bulma.io/assets/images/made-with-bulma.png" alt="Made with Bulma" width="128"
+                        height="24">
+                </a>
+                <div class="is-flex is-justify-content-space-between">
+                    <div class="is-flex is-flex-direction-row is-justify-content-center is-align-items-center">
+                        <div class="pb-4">
+                            <div class="SetIconStyle mr-1">
+                                <span class="icon">
+                                    <svg fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 502 502" xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path d="M499.071,428.845l-28.397-28.397c-1.875-1.875-4.419-2.929-7.071-2.929c-2.652,0-5.196,1.054-7.071,2.929l-2.868,2.868
+                        l-97.2-97.199v-51.232c0-2.652-1.054-5.195-2.929-7.071L115.71,9.986C109.27,3.547,100.708,0,91.6,0
+                        c-9.108,0-17.67,3.547-24.11,9.986L9.986,67.49C3.546,73.931,0,82.493,0,91.601c0,9.106,3.546,17.669,9.986,24.109
+                        l237.826,237.826c1.876,1.875,4.419,2.929,7.071,2.929h51.232l97.199,97.199l-2.867,2.867c-3.905,3.905-3.905,10.237,0,14.143
+                        l28.397,28.397c1.875,1.875,4.419,2.929,7.071,2.929c2.652,0,5.196-1.054,7.071-2.929l56.084-56.084
+                        C502.976,439.082,502.976,432.75,499.071,428.845z M306.115,336.465h-47.09L24.129,101.567C21.466,98.905,20,95.365,20,91.601
+                        c0-3.766,1.466-7.306,4.129-9.968l57.504-57.504C84.295,21.466,87.835,20,91.6,20c3.765,0,7.305,1.466,9.967,4.129
+                        l234.897,234.897v47.089L306.115,336.465z M324.401,346.464l22.064-22.064l93.057,93.057l-22.064,22.064L324.401,346.464z
+                         M435.916,477.857l-14.255-14.255l2.859-2.858c0.003-0.003,0.007-0.006,0.01-0.009l24.743-24.743l14.331-14.331l14.255,14.255
+                        L435.916,477.857z" />
+                                                    <path
+                                                        d="M114.29,136.354c-3.905-3.904-10.237-3.904-14.143,0c-3.905,3.905-3.905,10.237,0,14.143L264.141,314.49
+                        c1.953,1.952,4.512,2.929,7.071,2.929s5.119-0.977,7.071-2.929c3.905-3.905,3.905-10.237,0-14.142L114.29,136.354z" />
+                                                    <path
+                                                        d="M70.274,92.338c-3.905-3.904-10.237-3.904-14.142,0c-3.905,3.905-3.905,10.237,0,14.143l17.749,17.748
+                        c1.953,1.952,4.512,2.929,7.071,2.929c2.559,0,5.119-0.977,7.071-2.929c3.905-3.905,3.905-10.237,0-14.143L70.274,92.338z" />
+                                                    <path
+                                                        d="M156.5,316c-33.911,0-61.5,27.589-61.5,61.5s27.589,61.5,61.5,61.5s61.5-27.589,61.5-61.5S190.411,316,156.5,316z
+                         M156.5,419c-22.883,0-41.5-18.617-41.5-41.5s18.617-41.5,41.5-41.5s41.5,18.617,41.5,41.5S179.383,419,156.5,419z" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="is-flex is-flex-direction-column is-justify-content-center b-0">
+                                <h3 class="title is-3">CricketScoreKeeper</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="content">
+                            <p class="is-size-5">Contact Us</p>
+                            <p class="is-size-6">Phone No&nbsp;&#8674;&nbsp;4353G980E1</p>
+                            <p class="is-size-6">Email&nbsp;&#8674;&nbsp;thakurraakrshitt@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="CricketScoreKeeperJS.js"></script>
+</body>
+
+</html>

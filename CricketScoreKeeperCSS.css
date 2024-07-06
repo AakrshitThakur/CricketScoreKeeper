@@ -1,0 +1,28 @@
+.SetIconStyle{
+    border: 1px solid #000;
+    padding: 2px;
+}
+footer div div[class="content"]{
+    padding: 0.5rem;
+    border: 1px solid #000;
+}
+div[class="card-content"] div[class="is-flex is-justify-content-center pb-5"]{
+    border-bottom: 1px solid #000;
+}
+section{
+    margin-top: 1.75rem!important;
+}
+#MatchOvers{
+    margin: 0;
+}
+#RunsScored{
+    margin: 0;
+}
+.SetBottomMargin{
+    margin-bottom: 0.5rem;;
+}
+#WebFooter{
+    background-color: #5b5b5b!important;
+    color: #fff!important;
+    padding: 25px!important;
+}
