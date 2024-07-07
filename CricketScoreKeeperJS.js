@@ -36,7 +36,7 @@ const ResetCurrGame = (InningsOver) => {
     CurrOut = 0;
     RunsScoredH3.innerHTML = `${CurrScore - CurrOut}`;
     OversBowled = [0, 0];
-    OversBowledH3.innerHTML = `${OversBowled[0]} - ${OversBowled[1]}`
+    OversBowledH3.innerHTML = `${OversBowled[0]}-${OversBowled[1]}`
     if (!InningsOver) {
         EnableElm(OversOfSelect);
         section.removeChild(AppendChildHere);
@@ -274,17 +274,5 @@ ResetScore.addEventListener('click', () => {
     DisableElm(ResetEverything);
 });
 ResetEverything.addEventListener('click', () => {
-    ResetCurrGame(false);
-    HasTeamA_Played = false;
-    SetTarget = 0;
-    TeamA_Scored = 0;
-    TeamAWins = TeamBWins = TotalMatchsPlayed = 0;
-    TotalWins.innerHTML = 'Total Wins Are: Team A Has 0 Wins and Team B Has 0 Wins';
-    DisableElm(OversOfSelect);
-    DisableElm(ScoreSelect);
-    DisableElm(IsOutBtn);
-    DisableElm(IsNotOutBtn);
-    DisableElm(ResetScore);
-    DisableElm(ResetEverything);
-    EnableElm(SeriesOfSelect);
+    location.reload();
 });
